@@ -86,6 +86,7 @@ export function register(server: McpServer, client: GitlabClient, config: Server
             username: user.username,
             name: user.name,
           })),
+          labels: newMr.labels ?? [],
           web_url: newMr.web_url,
         });
       });
