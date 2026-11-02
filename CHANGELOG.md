@@ -1,3 +1,9 @@
+## [1.2.0](https://github.com/mike-novum/gitlab-mcp/compare/v1.1.0...v1.2.0) (2026-11-02)
+
+### Features
+
+* добавлен вывод лейблов в ответе создания merge request ([1aab726](https://github.com/mike-novum/gitlab-mcp/commit/1aab726d9fe1ba9db9948e8cefb63346a4546cf4))
+
 ## [1.1.0](https://github.com/mike-novum/gitlab-mcp/compare/v1.0.0...v1.1.0) (2026-11-02)
 
 ### Features
