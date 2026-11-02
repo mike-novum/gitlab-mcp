@@ -1,3 +1,9 @@
+## [1.3.0](https://github.com/mike-novum/gitlab-mcp/compare/v1.2.0...v1.3.0) (2026-11-02)
+
+### Features
+
+* добавлена возможность закрывать merge request ([b2ca6ab](https://github.com/mike-novum/gitlab-mcp/commit/b2ca6ab3614ef4862b6a410d5cc0cea1b0bcac84))
+
 ## [1.2.0](https://github.com/mike-novum/gitlab-mcp/compare/v1.1.0...v1.2.0) (2026-11-02)
 
 ### Features
