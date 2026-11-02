@@ -23,7 +23,32 @@ npm run build
 | Модули | `--tools` | `GITLAB_MCP_TOOLS` | `all` |
 | Файл окружения | `--env-file` | — | `.env` в текущей директории |
 
+`GITLAB_DEFAULT_PROJECT` и `--default-project` принимают числовой ID или путь `namespace/project`.
+
+```json
+"GITLAB_DEFAULT_PROJECT": "12345678"
+```
+
+```bash
+node dist/index.js --default-project 12345678
+```
+
 Модули `--tools`: `mr`, `repository`, `ci`, `settings`, `discovery`. Несколько модулей через запятую. `all` включает все.
+
+Регистрируются только перечисленные модули. Остальные выключены.
+
+Только merge request и репозиторий:
+
+```json
+"env": {
+  "GITLAB_TOKEN": "glpat-...",
+  "GITLAB_MCP_TOOLS": "mr,repository"
+}
+```
+
+```bash
+node dist/index.js --tools mr,repository
+```
 
 Токену нужны права на вызываемые операции. Для настроек проекта обычно нужен Maintainer.
 
