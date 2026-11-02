@@ -119,6 +119,7 @@ claude mcp add gitlab -- node /ABS/PATH/gitlab-mcp/dist/index.js
 - `gitlab_get_mr` — карточка MR. Опционально дифф, обсуждения и статус пайплайна. Параметры: `mr_iid`, `include_diff`, `include_discussions`, `file_path`, `max_diff_lines`, `project_id`. Дифф обрезается, по умолчанию 500 строк.
 - `gitlab_create_mr` — создание MR. Параметры: `source_branch`, `target_branch`, `title`, `description`, `draft`, `remove_source_branch`, `squash`, `labels`, `assignee_ids`, `reviewer_ids`, `project_id`. `assignee_ids` и `reviewer_ids` — списки числовых ID или username.
 - `gitlab_update_mr` — изменение MR. Параметры: `mr_iid`, `title`, `description`, `target_branch`, `draft`, `assignee_ids`, `reviewer_ids`, `labels`, `add_labels`, `remove_labels`, `milestone_id`, `state_event`, `remove_source_branch`, `squash`, `discussion_locked`, `allow_collaboration`, `project_id`. Пустой список `assignee_ids` или `reviewer_ids` снимает назначение. `state_event`: `close` или `reopen`. `milestone_id: 0` снимает майлстоун.
+- `gitlab_close_mr` — закрытие MR без слияния. Параметры: `mr_iid`, `project_id`.
 - `gitlab_create_mr_note` — комментарий к MR, ответ в тред или inline-комментарий к строке диффа. Параметры: `mr_iid`, `body`, `discussion_id`, `path`, `line`, `old_line`, `project_id`. Для inline-комментария `diff_refs` запрашиваются у MR автоматически.
 
 ### ci

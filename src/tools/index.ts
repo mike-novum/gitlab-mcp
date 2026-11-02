@@ -8,6 +8,7 @@ import { register as registerGitlabListMrs } from './gitlab_list_mrs.js';
 import { register as registerGitlabGetMr } from './gitlab_get_mr.js';
 import { register as registerGitlabCreateMr } from './gitlab_create_mr.js';
 import { register as registerGitlabUpdateMr } from './gitlab_update_mr.js';
+import { register as registerGitlabCloseMr } from './gitlab_close_mr.js';
 import { register as registerGitlabCreateMrNote } from './gitlab_create_mr_note.js';
 import { register as registerGitlabListPipelines } from './gitlab_list_pipelines.js';
 import { register as registerGitlabGetPipeline } from './gitlab_get_pipeline.js';
@@ -35,6 +36,7 @@ export function registerMergeRequestTools(server: McpServer, client: GitlabClien
   registerGitlabGetMr(server, client, config);
   registerGitlabCreateMr(server, client, config);
   registerGitlabUpdateMr(server, client, config);
+  registerGitlabCloseMr(server, client, config);
   registerGitlabCreateMrNote(server, client, config);
 }
 
