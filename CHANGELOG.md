@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/mike-novum/gitlab-mcp/compare/v1.0.0...v1.1.0) (2026-11-02)
+
+### Features
+
+* добавлена возможность изменять параметры существующего merge request ([718bde2](https://github.com/mike-novum/gitlab-mcp/commit/718bde2bab88c43fdb510a1caeeee43ec8118b90))
+* добавлена возможность указать ответственного и ревьюера при создании merge request ([38998c7](https://github.com/mike-novum/gitlab-mcp/commit/38998c79fde5ad12fc07e2f045f05c19ed66170b))
+
 ## 1.0.0 (2026-11-02)
 
 ### Features
