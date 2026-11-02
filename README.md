@@ -116,4 +116,4 @@ claude mcp add gitlab -- node /ABS/PATH/gitlab-mcp/dist/index.js
 
 ## Релиз
 
-Push в `master` запускает semantic-release. Версия считается по [Conventional Commits](https://www.conventionalcommits.org/): `fix` — patch, `feat` — minor, `feat!` или `BREAKING CHANGE` — major. В GitHub Release прикрепляется собранный `index.js`. `CHANGELOG.md` и поле `version` обновляются автоматически.
+Push в `main` запускает semantic-release. Версия считается по [Conventional Commits](https://www.conventionalcommits.org/): `fix` — patch, `feat` — minor, `feat!` или `BREAKING CHANGE` — major. В GitHub Release прикрепляется собранный `index.js`. `CHANGELOG.md` и поле `version` обновляются автоматически.
